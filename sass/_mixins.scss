@@ -1,0 +1,19 @@
+@mixin order-now{
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: rgb(106, 115, 32);
+  cursor: pointer;
+  gap: 5px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: aliceblue;
+  letter-spacing: 2px;
+  &:hover{
+    border: 2px solid red;
+  }
+}

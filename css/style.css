@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.header {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.header .nav {
+  width: 90%;
+  height: 80px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: bisque;
+}
+.header .nav .nav__options {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.header .nav .nav__options .options__item .item__link {
+  color: #94311C;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.header .nav .nav__options .options__item .item__link:hover {
+  transition: all 0.2s;
+  border-bottom: 2px solid #94311C;
+  padding-bottom: 5px;
+}
+.header .nav .nav__options .nav__icons {
+  display: flex;
+  gap: 15px;
+}
+.header .hero {
+  width: 100%;
+  max-height: 600px;
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  margin-bottom: 30px;
+  background: url("../img/espiga.png") no-repeat right top;
+  background-size: 500px;
+}
+.header .hero__title {
+  grid-column: 1/1;
+  grid-row: 1/span 3;
+  transform: rotate(270deg);
+  font-size: 12rem;
+  width: 400px;
+  height: 160px;
+  justify-self: center;
+  align-self: center;
+}
+.header .hero__icon {
+  grid-column: 1/1;
+  grid-row: 4;
+  justify-self: center;
+}
+.header .hero__illustration {
+  grid-column: 2/span 2;
+  grid-row: 2/span 2;
+  place-self: center;
+}
+.header .hero .cta {
+  grid-column: 2/span 2;
+  grid-row: 4;
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: rgb(106, 115, 32);
+  cursor: pointer;
+  gap: 5px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: aliceblue;
+  letter-spacing: 2px;
+  justify-self: center;
+  align-self: center;
+}
+.header .hero .cta:hover {
+  border: 2px solid red;
+}
+.header .hero__info {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.content {
+  width: 90%;
+  max-width: 1400px;
+  height: auto;
+  margin: 30px auto;
+  background-color: cornsilk;
+}
+.content .about {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.content .about__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.content .about__info {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.content .about .cta {
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: rgb(106, 115, 32);
+  cursor: pointer;
+  gap: 5px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: aliceblue;
+  letter-spacing: 2px;
+}
+.content .about .cta:hover {
+  border: 2px solid red;
+}
+
+/*# sourceMappingURL=style.css.map */
