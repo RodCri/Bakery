@@ -1,8 +1,9 @@
+@use './variables' as v;
 @mixin order-now{
   width: 200px;
   height: 45px;
   border-radius: 10px;
-  background-color: rgb(106, 115, 32);
+  background-color: v.$bg-cta;
   cursor: pointer;
   gap: 5px;
   border: 1px solid transparent;
@@ -11,9 +12,9 @@
   justify-content: center;
   font-size: 1.4rem;
   text-transform: uppercase;
-  color: aliceblue;
+  color: v.$text-cta;
   letter-spacing: 2px;
   &:hover{
-    border: 2px solid red;
+    background-color: v.$bg-cta-black;
   }
 }
