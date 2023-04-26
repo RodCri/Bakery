@@ -58,3 +58,18 @@ if (chefCanvas && chefCanvas.getContext) {
     context.stroke();
   }
 }
+const discoverCanvas = document.querySelector('#discover');
+if (discoverCanvas && discoverCanvas.getContext) {
+  let context = discoverCanvas.getContext('2d');
+  if (context) {
+    let X = 200;
+    let Y = 270;
+    let r = 190;
+    let aPartida = 1.5 * Math.PI +0.4;
+    let aFinal = 0.5 * Math.PI - 0.7;
+    context.strokeStyle = '#464646';
+    context.lineWidth = 10;
+    context.arc(X, Y, r, aPartida, aFinal);
+    context.stroke();
+  }
+}

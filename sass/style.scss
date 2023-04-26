@@ -279,7 +279,6 @@ body{
       border-radius: 50%;
       display: flex;
       width: 500px;
-      
       #chef{
         position: absolute;
       }
@@ -290,9 +289,154 @@ body{
         width: 70%;
         z-index: -1;
       }
+      .chef__testel{
+        position: relative;
+        bottom: -150px;
+        left: 30px;
+        width: 140px;
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 3px #dedddd;
+        cursor: pointer;
+        .star{
+          background-color: #fbc84b;
+          width: 22px;
+          height: 22px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+        }
+        .testel__point{
+          color: v.$bg-cta;
+          font-weight: 700;
+          .point{
+            color: v.$title-hero;
+            font-weight: 700;
+          }
+        }
+        .testel__title{
+          font-size: 1.6rem;
+          font-weight: 700;
+          color: v.$title-hero;
+        }
+      }
     }
     &__info{
-      flex: 1;
+      width: 500px;
+      padding: 20px;
+      .chef__best{
+        font-size: 3.2rem;
+        margin-bottom: 20px;
+        color: v.$title-hero;
+      }
+      .chef__description{
+        line-height: 1.5;
+        color: v.$text-hero;
+        margin-bottom: 30px;
+      }
+      .cta{
+        @include order-now;
+      }
+      .cta-black{
+        background-color: v.$bg-cta-black;
+        &:hover{
+          background-color: v.$bg-cta;
+        }
+      }
+    }
+  }
+  .discover{
+    display: flex;
+    padding: 10px;
+    margin: 100px 0;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 50px;
+    &__photo{
+      border-radius: 50%;
+      display: flex;
+      width: 500px;
+      #discover{
+        position: absolute;
+      }
+      .discover__avatar{
+        position: relative;
+        bottom: 30px;
+        left: -30px;
+        width: 70%;
+        z-index: -1;
+      }
+      .discover__testel{
+        min-width: 250px;
+        height: 100px;
+        position: relative;
+        bottom: -100px;
+        right: 580px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 3px #dedddd;
+        cursor: pointer;
+        .testel__point{
+          color: v.$bg-cta;
+          font-weight: 700;
+          font-size: 1.4rem;
+          .point{
+            color: v.$title-hero;
+            font-weight: 700;
+          }
+        }
+        .testel__cta{
+          background-color: #fbc84b;
+          border: none;
+          padding: 6px 12px;
+          margin-top: 10px;
+          border-radius: 5px;
+          color: #fff;
+          font-weight: 700;
+          cursor: pointer;
+        }
+        .testel__title{
+          font-size: 1.4rem;
+          font-weight: 700;
+          color: v.$title-hero;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    &__info{
+      width: 500px;
+      padding: 20px;
+      .discover__best{
+        font-size: 3.2rem;
+        margin-bottom: 20px;
+        color: v.$title-hero;
+      }
+      .discover__description{
+        line-height: 1.5;
+        color: v.$text-hero;
+        margin-bottom: 30px;
+      }
+      .cta{
+        @include order-now;
+      }
+      .cta-black{
+        background-color: v.$bg-cta-black;
+        &:hover{
+          background-color: v.$bg-cta;
+        }
+      }
     }
   }
 }
