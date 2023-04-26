@@ -152,6 +152,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, max-content);
+    background: url('../img/bg-ingredient.png') no-repeat bottom right;
     &__product{
       width: 400px;
       height: 400px;
@@ -210,6 +211,88 @@ body{
       background: url('../img/prop1.png') no-repeat center;
       background-size: 300px;
       justify-self: center;
+    }
+  }
+  .made{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    &__info{
+      width: 40%;
+      padding: 30px;
+      background: url('../img/cake.png') no-repeat 300px bottom;
+      .info__how{
+        font-size: 4.6rem;
+        margin-bottom: 20px;
+        color: v.$title-hero;
+      }
+      .info__description{
+        font-size: 1.6rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        color: v.$text-hero;
+      }
+      .cta{
+        @include order-now;
+      }
+    }
+    &__ingredient{
+      padding: 20px;
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      .ingredient{
+        width: 40%;
+        text-align: center;
+        &__img{
+          width: 100px;
+          height: 100px;
+          object-fit: contain;
+        }
+        &__title{
+          font-size: 2rem;
+          margin: 1rem 0;
+          color: v.$title-hero;
+        }
+        &__info{
+          font-size: 1.4rem;
+          line-height: 1.5;
+          color: v.$text-hero;
+        }
+      }
+    }
+  }
+  .chef{
+    display: flex;
+    padding: 10px;
+    margin: 100px 0;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    &__photo{
+      border-radius: 50%;
+      display: flex;
+      width: 500px;
+      
+      #chef{
+        position: absolute;
+      }
+      .chef__avatar{
+        position: relative;
+        bottom: 30px;
+        left: 80px;
+        width: 70%;
+        z-index: -1;
+      }
+    }
+    &__info{
+      flex: 1;
     }
   }
 }

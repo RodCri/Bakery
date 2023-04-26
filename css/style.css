@@ -183,6 +183,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, max-content);
+  background: url("../img/bg-ingredient.png") no-repeat bottom right;
 }
 .content .props__product {
   width: 400px;
@@ -242,6 +243,103 @@ body {
   background: url("../img/prop1.png") no-repeat center;
   background-size: 300px;
   justify-self: center;
+}
+.content .made {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.content .made__info {
+  width: 40%;
+  padding: 30px;
+  background: url("../img/cake.png") no-repeat 300px bottom;
+}
+.content .made__info .info__how {
+  font-size: 4.6rem;
+  margin-bottom: 20px;
+  color: #464646;
+}
+.content .made__info .info__description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #828282;
+}
+.content .made__info .cta {
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #c86f33;
+  cursor: pointer;
+  gap: 5px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #F4F6F7;
+  letter-spacing: 2px;
+}
+.content .made__info .cta:hover {
+  background-color: #4a433d;
+}
+.content .made__ingredient {
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.content .made__ingredient .ingredient {
+  width: 40%;
+  text-align: center;
+}
+.content .made__ingredient .ingredient__img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.content .made__ingredient .ingredient__title {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #464646;
+}
+.content .made__ingredient .ingredient__info {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #828282;
+}
+.content .chef {
+  display: flex;
+  padding: 10px;
+  margin: 100px 0;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.content .chef__photo {
+  border-radius: 50%;
+  display: flex;
+  width: 500px;
+}
+.content .chef__photo #chef {
+  position: absolute;
+}
+.content .chef__photo .chef__avatar {
+  position: relative;
+  bottom: 30px;
+  left: 80px;
+  width: 70%;
+  z-index: -1;
+}
+.content .chef__info {
+  flex: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

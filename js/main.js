@@ -43,3 +43,18 @@ if (leftCanvas && leftCanvas.getContext) {
     context.stroke();
   }
 }
+const chefCanvas = document.querySelector('#chef');
+if (chefCanvas && chefCanvas.getContext) {
+  let context = chefCanvas.getContext('2d');
+  if (context) {
+    let X = 250;
+    let Y = 260;
+    let r = 220;
+    let aPartida = 0.5 * Math.PI + 0.6;
+    let aFinal = 1.5 * Math.PI -0.5;
+    context.strokeStyle = '#464646';
+    context.lineWidth = 10;
+    context.arc(X, Y, r, aPartida, aFinal);
+    context.stroke();
+  }
+}
