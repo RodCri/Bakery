@@ -8,6 +8,7 @@
   <meta name="description" content="landing page bakery">
   <meta name="keywords" content="landing, bakery">
   <meta name="author" content="Cristian Camilo Rodriguez">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/bakery.ico" type="image/x-icon">
 </head>
@@ -156,9 +157,42 @@
       </section>
     </article>
     <section class="testimonial">
-      <h1>testimonial</h1>
+      <h1 class="testimonial__title">Testimonial</h1>
+      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="40" slides-per-view="2">
+          <swiper-slide>
+            <div class="swiper-slide__avatar">
+              <img src="img/avatar1.png" alt="" class="avatar">
+            </div>
+            <h3 class="swiper-slide__name">Chris William</h3>
+            <p class="swiper-slide__comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione obcaecati nam libero accusantium ipsum, blanditiis, optio eaque provident quia, cupiditate id non nobis repudiandae quidem earum nemo necessitatibus veritatis et!</p>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="swiper-slide__avatar">
+              <img src="img/avatar2.png" alt="" class="avatar">
+            </div>
+            <h3 class="swiper-slide__name">Chris William</h3>
+            <p class="swiper-slide__comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione obcaecati nam libero accusantium ipsum, blanditiis, optio eaque provident quia, cupiditate id non nobis repudiandae quidem earum nemo necessitatibus veritatis et!</p>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="swiper-slide__avatar">
+              <img src="img/avatar3.png" alt="" class="avatar">
+            </div>
+            <h3 class="swiper-slide__name">Chris William</h3>
+            <p class="swiper-slide__comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione obcaecati nam libero accusantium ipsum, blanditiis, optio eaque provident quia, cupiditate id non nobis repudiandae quidem earum nemo necessitatibus veritatis et!</p>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="swiper-slide__avatar">
+              <img src="img/avatar4.png" alt="" class="avatar">
+            </div>
+            <h3 class="swiper-slide__name">Chris William</h3>
+            <p class="swiper-slide__comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione obcaecati nam libero accusantium ipsum, blanditiis, optio eaque provident quia, cupiditate id non nobis repudiandae quidem earum nemo necessitatibus veritatis et!</p>
+          </swiper-slide>
+        
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js" defer='defer'></script>
   <script src="js/main.js"></script>
 </body>
 </html>

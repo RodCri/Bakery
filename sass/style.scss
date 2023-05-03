@@ -1,6 +1,10 @@
 @use 'variables' as v;
 @import 'mixins';
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+:root{
+  --swiper-pagination-top: 93%;
+  --swiper-pagination-color: #c86f33;
+}
 *{
   padding: 0;
   margin: 0;
@@ -438,5 +442,71 @@ body{
         }
       }
     }
+  }
+  .testimonial{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title{
+      color: v.$bg-cta;
+      font-size: 5rem;
+      padding: 20px 0;
+    }
+    swiper-container {
+      width: 100%;
+      height: 100%;
+      padding: 30px;
+    }
+    
+    swiper-slide {
+      min-width: 490px;
+      height: 300px;
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 30px 0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px 10px rgb(239, 239, 237) ;
+      cursor: pointer;
+      @media(max-width:900px){
+        slidesPerView: 1;
+      }
+    }
+    .swiper-slide__avatar{
+      width: 80px;
+      height: 80px;
+      background-color: v.$bg-cta-black;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      .avatar{
+        width: 50px;
+        height: 60px;
+        object-fit: contain;
+      }
+    }
+    .swiper-slide__name{
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      color: v.$title-hero;
+    }
+    .swiper-slide__comment{
+      color: v.$text-hero;
+      font-size: 1.6rem;
+      line-height: 1.5;
+    }
+    swiper-pagination-bullet{
+      border: 1px solid black !important;
+    }
+    
   }
 }
