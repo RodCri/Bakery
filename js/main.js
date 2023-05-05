@@ -73,3 +73,16 @@ if (discoverCanvas && discoverCanvas.getContext) {
     context.stroke();
   }
 }
+
+const swipper = document.querySelector('.mySwiper');
+addEventListener("resize", (event) => {
+  let w = window.innerWidth;
+  if(w<=900){
+    swipper.passedParams.slidesaassPerView = 3;
+    
+  }else if(w>900){
+    swipper.style.backgroundColor = "#fff"
+    swipper.passedParams.slidesPerView = 2;
+  }
+});
+
