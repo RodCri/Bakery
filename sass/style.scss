@@ -460,7 +460,6 @@ body{
       height: 100%;
       padding: 30px;
     }
-    
     swiper-slide {
       min-width: 490px;
       height: 300px;
@@ -475,6 +474,9 @@ body{
       border-radius: 10px;
       box-shadow: 0 0 20px 10px rgb(239, 239, 237) ;
       cursor: pointer;
+      &:hover, &:hover>.swiper-slide__name, &:hover >.swiper-slide__comment{
+        background-color: #f1ecec;
+      }
       @media(max-width:900px){
         slidesPerView: 1;
       }
@@ -498,6 +500,9 @@ body{
       font-size: 2.2rem;
       margin-bottom: 10px;
       color: v.$title-hero;
+      &:hover{
+        color: #dedddd;
+      }
     }
     .swiper-slide__comment{
       color: v.$text-hero;
@@ -507,6 +512,144 @@ body{
     swiper-pagination-bullet{
       border: 1px solid black !important;
     }
-    
+  }
+  .contact{
+    margin: 100px 0;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    &__form{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .form__title{
+        color: v.$bg-cta;
+        font-size: 4rem;
+      }
+      .form__info{
+        max-width: 500px;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        color: v.$text-hero;
+        margin-bottom: 20px;
+      }
+      .form{
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        &__control{
+          height: 40px;
+          padding: 0 20px;
+          border: 2px solid #adadad;
+          border-radius: 6px;
+          color: #c86f33;
+          outline-color: #c86f33;
+          font-family: 'Ubuntu', sans-serif;
+          &::placeholder{
+            color: #c86f33;
+            font-weight: 700;
+          }
+        }
+        #message{
+          color: #c86f33;
+          padding: 10px 20px;
+          outline-color: #c86f33;
+          font-family: 'Ubuntu', sans-serif;
+          border: 2px solid #adadad;
+          border-radius: 6px;
+          resize: none;
+          &::placeholder{
+            color: #c86f33;
+            font-weight: 700;
+          }
+        }
+        .cta-black{
+          @include order-now;
+          width: 100%;
+          background-color: v.$bg-cta-black;
+          &:hover{
+            background-color: v.$bg-cta;
+          }
+        }
+      }
+    }
+    &__figure{
+      width: 30%;
+    }
+  }
+}
+.footer{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 50px;
+  &__company{
+    width: 20%;
+    padding: 10px 0;
+    .company__name{
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+      color: v.$title-hero;
+      font-weight: 700;
+    }
+    .company__info{
+      font-size: 1.6rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: v.$text-hero;
+    }
+    .company__social{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .icon-social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: v.$title-hero;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        &:hover{
+          background-color: #c86f33;
+          transition: all .3s ease;
+        }
+        &:nth-child(3){
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+  &__options{    
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    .options{
+      &__name{
+        font-size: 2rem;
+        color: v.$bg-cta-black;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+      &__item{
+        list-style: none;
+        color: v.$text-hero;
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        cursor: pointer;
+        &:hover{
+          color: #c86f33;
+          text-decoration: underline;
+          transition: all .3s ease-in;
+        }
+      }
+    }
   }
 }

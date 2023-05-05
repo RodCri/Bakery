@@ -556,6 +556,9 @@ body {
   box-shadow: 0 0 20px 10px rgb(239, 239, 237);
   cursor: pointer;
 }
+.content .testimonial swiper-slide:hover, .content .testimonial swiper-slide:hover > .swiper-slide__name, .content .testimonial swiper-slide:hover > .swiper-slide__comment {
+  background-color: #f1ecec;
+}
 @media (max-width: 900px) {
   .content .testimonial swiper-slide {
     slidesPerView: 1;
@@ -581,6 +584,9 @@ body {
   margin-bottom: 10px;
   color: #464646;
 }
+.content .testimonial .swiper-slide__name:hover {
+  color: #dedddd;
+}
 .content .testimonial .swiper-slide__comment {
   color: #828282;
   font-size: 1.6rem;
@@ -588,6 +594,160 @@ body {
 }
 .content .testimonial swiper-pagination-bullet {
   border: 1px solid black !important;
+}
+.content .contact {
+  margin: 100px 0;
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.content .contact__form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.content .contact__form .form__title {
+  color: #c86f33;
+  font-size: 4rem;
+}
+.content .contact__form .form__info {
+  max-width: 500px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #828282;
+  margin-bottom: 20px;
+}
+.content .contact__form .form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Ubuntu", sans-serif;
+}
+.content .contact__form .form__control {
+  height: 40px;
+  padding: 0 20px;
+  border: 2px solid #adadad;
+  border-radius: 6px;
+  color: #c86f33;
+  outline-color: #c86f33;
+  font-family: "Ubuntu", sans-serif;
+}
+.content .contact__form .form__control::placeholder {
+  color: #c86f33;
+  font-weight: 700;
+}
+.content .contact__form .form #message {
+  color: #c86f33;
+  padding: 10px 20px;
+  outline-color: #c86f33;
+  font-family: "Ubuntu", sans-serif;
+  border: 2px solid #adadad;
+  border-radius: 6px;
+  resize: none;
+}
+.content .contact__form .form #message::placeholder {
+  color: #c86f33;
+  font-weight: 700;
+}
+.content .contact__form .form .cta-black {
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #c86f33;
+  cursor: pointer;
+  gap: 5px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #F4F6F7;
+  letter-spacing: 2px;
+  width: 100%;
+  background-color: #4a433d;
+}
+.content .contact__form .form .cta-black:hover {
+  background-color: #4a433d;
+}
+.content .contact__form .form .cta-black:hover {
+  background-color: #c86f33;
+}
+.content .contact__figure {
+  width: 30%;
+}
+
+.footer {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 50px;
+}
+.footer__company {
+  width: 20%;
+  padding: 10px 0;
+}
+.footer__company .company__name {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+  color: #464646;
+  font-weight: 700;
+}
+.footer__company .company__info {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #828282;
+}
+.footer__company .company__social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer__company .company__social .icon-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #464646;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.footer__company .company__social .icon-social:hover {
+  background-color: #c86f33;
+  transition: all 0.3s ease;
+}
+.footer__company .company__social .icon-social:nth-child(3) {
+  padding-top: 5px;
+}
+.footer__options {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__options .options__name {
+  font-size: 2rem;
+  color: #4a433d;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.footer__options .options__item {
+  list-style: none;
+  color: #828282;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.footer__options .options__item:hover {
+  color: #c86f33;
+  text-decoration: underline;
+  transition: all 0.3s ease-in;
 }
 
 /*# sourceMappingURL=style.css.map */

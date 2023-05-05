@@ -78,7 +78,7 @@ const swipper = document.querySelector('.mySwiper');
 addEventListener("resize", (event) => {
   let w = window.innerWidth;
   if(w<=900){
-    swipper.passedParams.slidesPerView = 3;
+    swipper.passedParams.slidesaassPerView = 3;
     
   }else if(w>900){
     swipper.style.backgroundColor = "#fff"
@@ -86,9 +86,3 @@ addEventListener("resize", (event) => {
   }
 });
 
-let swiper = new Swiper(".mySwiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
